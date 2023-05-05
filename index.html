@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">LOGO</div>
+        <div class="hamburgur">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li class="items"><a href="" class="active">HOME</a></li>
+                <li class="items"><a href="">ABOUT US</a></li>
+                <li class="items"><a href="">FEATURES</a></li>
+                <li class="items"><a href="">BLOG</a></li>
+                <li class="items"><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    
+    <script>
+      let  ham=document.querySelector('.hamburgur');
+      console.log(ham);
+      let nav = document.querySelector('.nav-bar');
+      console.log(nav);
+            ham.addEventListener('click',function(){
+                nav.classList.toggle('toggle');
+            })
+        // let items=document.querySelectorAll('.items');
+        // console.log(items);
+        // for(let i=0;i<item.length;i++){
+        //     items[i].addEventListener('hover',function(){
+        //         if(items[i]=='active')
+        //     {
+        //         items[i].classList.remove('active');
+        //     }
+        //      });
+            
+        
+    </script>
+</body>
+</html>
